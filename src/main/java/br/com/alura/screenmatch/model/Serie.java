@@ -21,9 +21,9 @@ public class Serie {
     private Categoria genero;
     private String atores;
     private String poster;
+    @Column()
     private String sinopse;
-
-    @Transient
+    @OneToMany(mappedBy = "serie")
     private List<Episodio> episodios = new ArrayList<>();
 
     public Serie() {}

@@ -2,7 +2,7 @@ package br.com.alura.screenmatch.service;
 
 import com.theokanning.openai.completion.CompletionRequest;
 import com.theokanning.openai.service.OpenAiService;
-
+@Deprecated
 public class ConsultaChatGPT {
     public static String obterTraducao(String texto) {
         OpenAiService service = new OpenAiService(System.getenv("OPENAI_APIKEY"));
